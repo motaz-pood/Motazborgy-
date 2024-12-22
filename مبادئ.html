@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المبادئ الأساسية للبرمجة الهيكلية</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: #ecf0f1;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+section:hover {
+    background-color: #dfe6e9;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #34495e;
+    line-height: 1.8;
+}
+
+footer {
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+section ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+section ul li {
+    background: #3498db;
+    color: #fff;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+section ul li:hover {
+    background: #8e44ad;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>البرمجة الهيكلية: المبادئ الأساسية</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">القسم 1</a></li>
+                <li><a href="#section2">القسم 2</a></li>
+                <li><a href="#section3">القسم 3</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+
+        <section id="section1">
+            <h2>العنوان 3</h2>
+            <p>البرمجة الهيكلية تعتمد على تقسيم الكود إلى وحدات وظيفية يمكن التحكم فيها بشكل مستقل.</p>
+        </section>
+
+        <section id="section2">
+            <h2>العنوان 4</h2>
+            <p>المبرمج الذي يستخدم البرمجة الهيكلية يتبع أسلوبًا محددًا في كتابة الكود ليكون واضحًا وقابلًا للتطوير بسهولة.</p>
+        </section>
+
+        <section id="section3">
+            <h2>العنوان 5</h2>
+            <p>أحد المبادئ الأساسية في البرمجة الهيكلية هو الاهتمام بتسلسل البيانات داخل النظام البرمجي.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    let sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.classList.add('hidden');
+    });
+
+    window.addEventListener('scroll', function() {
+        sections.forEach(section => {
+            let rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                section.classList.add('visible');
+            } else {
+                section.classList.remove('visible');
+            }
+        });
+    });
+});
+     </script>
+</body>
+</html>

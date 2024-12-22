@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع البرمجة الهيكلية</title>
+    <link rel="icon" href="icon.png">
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f4f4f9, #e0eafc);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.2s ease-in-out;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.intro {
+    background: linear-gradient(120deg, #2980b9, #6dd5fa);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.call-to-action {
+    background: linear-gradient(120deg, #27ae60, #2ecc71);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+     </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>البرمجة الهيكلية</h1>
+            <nav>
+                <ul>
+                    <li><a href="فوائد.html">فوائد البرمجة الهيكلية</a></li>
+                    <li><a href="تحديات.html">تحديات البرمجة الهيكلية</a></li>
+                    <li><a href="مبادئ.html">مبادئ البرمجة الهيكلية</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="content">
+            <h2>مرحباً بك في عالم البرمجة الهيكلية</h2>
+            <p>البرمجة الهيكلية هي أسلوب متبع لتطوير البرمجيات يعتمد على تقسيم الكود إلى وحدات صغيرة قابلة لإعادة الاستخدام.</p>
+            <p>تعد البرمجة الهيكلية من الأساليب التي تحسن الكود وتجعل عملية الصيانة والتعديل أسهل.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>المميزات</h2>
+        <div class="feature-box">
+            <div class="feature-item">
+                <h3>سهولة الفهم والصيانة</h3>
+                <p>يساعد تقسيم الكود إلى أجزاء مستقلة على سهولة الفهم والصيانة.</p>
+            </div>
+            <div class="feature-item">
+                <h3>قابلية التوسع</h3>
+                <p>يسهل إضافة ميزات جديدة دون التأثير الكبير على الكود الحالي.</p>
+            </div>
+            <div class="feature-item">
+                <h3>تقليل الأخطاء</h3>
+                <p>التنظيم الجيد يقلل من الأخطاء البرمجية ويزيد من استقرار البرنامج.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h2>ابدأ رحلتك مع البرمجة الهيكلية اليوم!</h2>
+        <p>اكتشف المزيد حول كيفية تحسين مهاراتك في البرمجة عبر صفحات الموقع.</p>
+        <a href="فوائد.html" class="cta-button">فوائد البرمجة الهيكلية</a>
+        <a href="تحديات.html" class="cta-button">تحديات البرمجة الهيكلية</a>
+        <a href="مبادئ.html" class="cta-button">مبادئ البرمجة الهيكلية</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 موقع البرمجة الهيكلية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function changeBackgroundColor() {
+    const colors = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#9B59B6"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+}
+
+
+
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetSection = document.querySelector(link.getAttribute('href'));
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: "smooth"
+        });
+    });
+});
+    </script>
+</body>
+</html>
